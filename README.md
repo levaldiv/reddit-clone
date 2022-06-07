@@ -7,7 +7,7 @@ How's it going everyone! This here is a Responsive Reddit Clone Challenge! I was
 **NOTE:** This utilizes the Reddits user Login information.
 
 
-## Main Functionalities
+## Core Features
 
 - Responsive (works well with mobile, medium and large devices)
 - Created a GraphQL backend that directly connects to my PostgreSQL Supabase database
