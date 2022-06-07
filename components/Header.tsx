@@ -18,6 +18,7 @@ import { signIn, signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 
 function Header() {
+  // const Header = () => {
   const { data: session } = useSession()
 
   return (
@@ -40,9 +41,9 @@ function Header() {
 
       {/* Seatch Box */}
       <form className="flex flex-1 items-center space-x-2 rounded-sm border border-gray-200 bg-gray-100 px-3 py-1">
-        <SearchIcon className="h-7 w-6 text-gray-400" />
+        <SearchIcon className="h-6 w-6 text-gray-400" />
         <input
-          className="flex-1 bg-transparent outline-none"
+          className="w-[20px] flex-1 bg-transparent pl-1 outline-none lg:w-full"
           type="text"
           placeholder="Search Reddit"
         />

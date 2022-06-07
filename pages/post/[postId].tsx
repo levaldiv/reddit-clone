@@ -14,6 +14,7 @@ type FormData = {
 }
 
 function PostPage() {
+// const PostPage = () => {
   const router = useRouter()
   const { data: session } = useSession()
   const [addComment] = useMutation(ADD_COMMENT, {

@@ -21,6 +21,7 @@ type Props = {
 }
 
 function PostBox({ subreddit }: Props) {
+  // const PostBox = ({ subreddit }: Props) => {
   const { data: session } = useSession()
   const {
     register,

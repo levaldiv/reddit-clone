@@ -7,20 +7,14 @@ type Props = {
 }
 
 function Avatar({ seed, large }: Props) {
+  // const Avatar = ({ seed, large}: Props) => {
   const { data: session } = useSession()
 
   return (
-    <div
-      className={`relative h-10 w-10 overflow-hidden rounded-full border-gray-300 bg-white ${
-        large && 'h-20 w-20'
-      }`}
-    >
+    <div className={`relative h-10 w-10 overflow-hidden rounded-full border-gray-300 bg-white ${ large && 'h-20 w-20'}`}>
       <Image
         layout="fill"
-        src={`https://avatars.dicebear.com/api/bottts/${
-          seed || session?.user?.name || 'placeholder'
-        }.svg`}
-      />
+        src={`https://avatars.dicebear.com/api/bottts/${seed || session?.user?.name || 'placeholder'}.svg`} />
     </div>
   )
 }

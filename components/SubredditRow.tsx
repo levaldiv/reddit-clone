@@ -8,6 +8,7 @@ type Props = {
 }
 
 function SubredditRow({ index, topic }: Props) {
+  // const SubredditRow = ({ index, topic }: Props) => {
   return (
     <div className="last:roudned-b flex items-center space-x-2 border-t bg-white px-4 py-2">
       <p>{index + 1}</p>

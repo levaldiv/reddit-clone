@@ -4,6 +4,7 @@ import Feed from '../../components/Feed'
 import PostBox from '../../components/PostBox'
 
 function Subreddit() {
+// const Subreddit = () => {
   const {
     query: { topic },
   } = useRouter()
@@ -26,7 +27,7 @@ function Subreddit() {
       </div>
 
       <div className="mx-auto mt-5 max-w-5xl pb-10">
-        <PostBox subreddit={topic as string} /> 
+        <PostBox subreddit={topic as string} />
         <Feed topic={topic as string} />
       </div>
     </div>
